@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+<TextView
+        android:id="@+id/matricesHeader"
+        android:text="Matrices"
+        android:textSize="18sp"
+        
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+<Button
+  android:id="@+id/updateButton"
+  android:text="Update"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_alignParentBottom="true"/>
+<ScrollView
+  android:id="@+id/matricesScrollView"
+  android:layout_width="wrap_content"
+  android:layout_height="fill_parent"
+  android:layout_below="@+id/matricesHeader"
+  android:layout_above="@+id/updateButton">
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+    
+    <TextView
+        android:id="@+id/matrixAHeader"
+        android:text="A:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <EditText
+        android:id="@+id/matrixA"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/matricesHeader"
+        android:layout_toRightOf="@+id/matrixAHeader"/>
+    <TextView
+        android:id="@+id/matrixBHeader"
+        android:text="B:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/matrixA"/>
+    <EditText
+        android:id="@+id/matrixB"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/matrixA"
+        android:layout_toRightOf="@+id/matrixBHeader"/>
+    <TextView
+        android:id="@+id/matrixCHeader"
+        android:text="C:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/matrixB"/>
+    <EditText
+        android:id="@+id/matrixC"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/matrixB"
+        android:layout_toRightOf="@+id/matrixCHeader"/>
+    <TextView
+        android:id="@+id/matrixDHeader"
+        android:text="D:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/matrixC"/>
+    <EditText
+        android:id="@+id/matrixD"
+        android:text=""
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/matrixC"
+        android:layout_toRightOf="@+id/matrixDHeader"/>
+</RelativeLayout>
+</ScrollView>        
+</RelativeLayout>

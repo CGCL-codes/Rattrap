@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+<ScrollView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:layout_alignParentTop="true"
+  android:layout_below="@+id/LinearLayout02">
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+<TextView android:text="@string/diffysol"  
+  android:layout_width="wrap_content" 
+  android:id="@+id/TextViewHeader" 
+  android:layout_height="wrap_content"
+  android:textSize="24sp"/>
+<EditText android:text="" 
+  android:id="@+id/funText" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/TextViewHeader"/>
+<Button android:text="@string/insertFun" 
+  android:id="@+id/insertButton" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:layout_below="@+id/funText"/>
+<TextView android:text="y(" 
+  android:layout_below="@+id/insertButton" 
+  android:layout_width="wrap_content" 
+  android:id="@+id/TextView01" 
+  android:layout_height="wrap_content"
+  android:textSize="24sp"/>
+<EditText android:text="0" 
+  android:id="@+id/xText" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@+id/TextView01"
+  android:layout_below="@+id/insertButton" />  
+<TextView android:text=")=" 
+  android:id="@+id/TextView02" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@+id/xText"
+  android:layout_below="@+id/insertButton" 
+  android:textSize="24sp"/>  
+<EditText android:text="1" 
+  android:id="@+id/yText" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content"
+  android:layout_toRightOf="@+id/TextView02"
+  android:layout_below="@+id/insertButton"/> 
+<Button android:layout_height="wrap_content" 
+  android:id="@+id/addButton" 
+  android:layout_width="wrap_content" 
+  android:layout_below="@+id/xText" 
+  android:text="@string/addGraph"/>
+ <Button android:layout_height="wrap_content" 
+  android:id="@+id/clear" 
+  android:layout_width="wrap_content" 
+  android:layout_below="@+id/xText"
+  android:layout_toRightOf="@+id/addButton" 
+  android:text="@string/clear"/>
+</RelativeLayout>
+</ScrollView>
+<RelativeLayout 
+			  android:id="@+id/LinearLayout02" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_alignParentBottom="true">
+<com.andymcsherry.library.KeyboardView
+			  android:id="@+id/slopeKey" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"/>
+</RelativeLayout>
+</RelativeLayout>

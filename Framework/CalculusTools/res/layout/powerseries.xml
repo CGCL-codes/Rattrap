@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<RelativeLayout 
+			  android:id="@+id/LinearLayout02" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_alignParentBottom="true">
+<com.andymcsherry.library.KeyboardView
+			  android:id="@+id/seriesKey" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+<ScrollView android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+	android:layout_alignParentTop="true"
+	android:layout_above="@+id/LinearLayout02">
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical">
+
+
+
+<TextView android:text="@string/powerSeriesHead" 
+		  android:id="@+id/TextView01" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    />
+<EditText android:text="" 
+		  android:id="@+id/powerFunctionText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/TextView01"/>
+<Button   android:text="@string/insertFun" 
+		  android:id="@+id/addButton" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/powerFunctionText"/>
+<TextView android:text="@string/forVariable" 
+		  android:id="@+id/TextView02" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/addButton"
+		  android:textSize="20sp"
+    />
+<EditText android:text="x" 
+		  android:id="@+id/powerVarText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/TextView02"/>
+<TextView android:text="@string/centeredAt" 
+		  android:id="@+id/TextView03" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/powerVarText"
+		  android:textSize="20sp"
+    />
+<EditText android:text="0" 
+		  android:id="@+id/powerCenterText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/TextView03"/>
+<TextView android:text="@string/numTerms" 
+		  android:id="@+id/TextView04" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/powerCenterText"
+		  android:textSize="20sp"
+    />
+<EditText android:text="4" 
+		  android:id="@+id/powerIText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/TextView04"/>
+<Button   android:text="@string/generate" 
+		  android:id="@+id/powerGenerate" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/powerIText"/>
+<TextView android:text="" 
+		  android:textSize="20sp" 
+		  android:id="@+id/seriesText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@id/powerGenerate"/>
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

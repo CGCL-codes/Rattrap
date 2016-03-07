@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ 			  xmlns:android="http://schemas.android.com/apk/res/android"
+ 			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent">
+<RelativeLayout 
+			  android:id="@+id/LinearLayout02" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_alignParentBottom="true">
+<com.andymcsherry.library.KeyboardView
+			  android:id="@+id/arcLengthKey" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"/>
+</RelativeLayout>
+<ScrollView   android:id="@+id/ScrollView01" 
+		      android:layout_width="wrap_content" 
+		      android:layout_height="wrap_content"
+		      android:layout_alignParentTop="true"
+		      android:layout_above="@+id/LinearLayout02">
+<RelativeLayout 
+			  android:id="@+id/LinearLayout01" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="fill_parent">
+<RelativeLayout 
+			  android:id="@+id/LinearLayout03" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content">
+<RadioGroup
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/radioGroup">
+      <RadioButton android:id="@+id/radio1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/arcLength" 
+		  android:textSize="18sp"
+    	  />
+      <RadioButton android:id="@+id/radio2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/surfaceArea" 
+		  android:textSize="18sp"
+    	  />
+</RadioGroup>
+</RelativeLayout>
+	<TextView android:text="@string/findArc" 
+			  android:id="@+id/defTextView01" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:textSize="20sp"
+    		  
+    		  android:layout_below="@+id/LinearLayout03"/>
+	<EditText android:text="" 
+			  android:id="@+id/defFunction" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@id/defTextView01"/>
+	<Button   android:text="@string/insertFun" 
+			  android:id="@+id/addButton" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@id/defFunction"/>
+<TextView     android:text="@string/overBounds" 
+			  android:id="@+id/defTextView02" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@id/addButton"
+			  android:textSize="20sp"
+		      />
+<RelativeLayout 
+			  android:id="@+id/RelativeLayout02" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@id/defTextView02">
+<EditText 	  android:text="x" 
+			  android:id="@+id/defVarX" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_alignParentTop="true"/>
+<TextView     android:text="1=" 
+			  android:id="@+id/defTextView03" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_toRightOf="@id/defVarX"
+			  android:layout_alignTop="@+id/defVarX"
+			  android:layout_marginTop="8sp"
+			  android:textSize="20sp"
+    		  />
+<EditText 	  android:text="" 
+			  android:id="@+id/defXA" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_toRightOf="@+id/defTextView03"
+			  android:layout_below="@+id/defTextView02"/>
+<TextView 	  android:text="x2=" 
+			  android:id="@+id/defTextView04" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@+id/defXA"
+			  android:textSize="20sp"
+    		  />
+<EditText 	  android:text="" 
+			  android:id="@+id/defXB" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_toRightOf="@id/defTextView04"
+			  android:layout_below="@+id/defXA"/>
+<EditText 	  android:text="y" 
+			  android:id="@+id/defVarY" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@+id/defXB"/>
+<TextView 	  android:text="1(x)=" 
+			  android:id="@+id/defTextView05" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@+id/defXB"
+			  android:layout_toRightOf="@+id/defVarY"
+			  android:layout_marginTop="8sp"
+			  android:textSize="20sp"
+    		  />
+<EditText 	  android:text="" 
+			  android:id="@+id/defYA" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_toRightOf="@id/defTextView05"
+			  android:layout_below="@+id/defXB"/>
+<TextView 	  android:text="y2(x)=" 
+			  android:id="@+id/defTextView06" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@+id/defYA"
+			  android:layout_toRightOf="@+id/defTextView06"
+			  android:layout_marginTop="8sp"
+			  android:textSize="20sp"
+    		  />
+<EditText 	  android:text="" 
+			  android:id="@+id/defYB" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_toRightOf="@id/defTextView06"
+			  android:layout_below="@+id/defYA"/>
+</RelativeLayout>
+<Button   	  android:text="@string/calculate" 
+			  android:id="@+id/defCalculate" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@+id/RelativeLayout02"/>	 
+<TextView 	  android:text="" 
+			  android:id="@+id/defOutput" 
+			  android:layout_width="wrap_content" 
+			  android:layout_height="wrap_content"
+			  android:layout_below="@id/defCalculate"
+			  android:textSize="20sp"/>
+			  
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

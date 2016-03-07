@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/addLayout">
+<ScrollView android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:id="@+id/derivativeScroll"
+  android:layout_above="@+id/RelativeLayout03"
+  android:layout_alignParentTop="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView android:text="@string/deriveF" 
+		  android:id="@+id/TextView01" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+    	  android:layout_marginTop="8sp"/>
+<EditText android:text="x" 
+		  android:id="@+id/fVarText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_toRightOf="@+id/TextView01"/>
+<TextView android:text=")=" 
+		  android:id="@+id/TextView11" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+    	  android:layout_toRightOf="@id/fVarText"
+    	  android:layout_marginTop="8sp"/>
+<EditText android:text="" 
+		  android:id="@+id/functionText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_toRightOf="@+id/TextView11"/>
+<TextView android:text="@string/withRespect" 
+		  android:id="@+id/TextView02" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+		  android:layout_below="@+id/functionText"
+    	  android:layout_marginTop="8dip"/>
+<Button   android:text="@string/insertFun" 
+		  android:id="@+id/addButton" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/functionText"
+		  android:layout_alignParentRight="true"/>
+<EditText android:text="x" android:id="@+id/varText"
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_toRightOf="@+id/TextView02"
+		  android:layout_toLeftOf="@+id/addButton"
+		  android:layout_below="@+id/functionText"/>
+<Button   android:text="@string/derive" 
+		  android:id="@+id/calculate" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/varText"
+		  android:layout_alignParentRight="true"/>
+<RadioGroup
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/radioGroup"
+      android:layout_below="@+id/varText"
+      android:layout_toLeftOf="@+id/calculate">
+      <RadioButton android:id="@+id/radio1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/first" 
+		  android:textSize="20sp"
+    	  />
+      <RadioButton android:id="@+id/radio2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/second" 
+		  android:textSize="20sp"
+    	  />
+      <RadioButton android:id="@+id/radio3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/third" 
+		  android:textSize="20sp"
+    	  />
+      <RadioButton android:id="@+id/radio4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/fourth" 
+		  android:textSize="20sp"
+    	  />
+    </RadioGroup>
+<Button   android:text="@string/addGraph" 
+		  android:id="@+id/addGraph" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/calculate"
+		  android:layout_alignParentRight="true"/>
+<TextView android:text="@string/derivative:" 
+		  android:id="@+id/TextView03" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+		  android:layout_below="@+id/calculate"/>
+<TextView android:text=""
+		  android:textSize="20sp" 
+		  android:id="@+id/derText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/calculate"
+		  android:layout_toLeftOf="@+id/addGraph"
+		  android:layout_toRightOf="@+id/TextView03"
+		  android:layout_marginLeft="5dip"
+		  android:layout_marginBottom="25dip"/>
+<Button   android:text="@string/evaluate" 
+		  android:id="@+id/derEvaluate" 
+		  android:layout_width="wrap_content"
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/derText"
+		  android:layout_alignParentRight="true"/>
+<TextView android:text="@string/evaluateAt" 
+		  android:id="@+id/TextView04" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_marginTop="8dip"
+		  android:textSize="20sp"
+    	  
+		  android:layout_below="@+id/derText"/>
+<EditText android:text="" 
+		  android:id="@+id/xText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/derText"
+		  android:layout_toRightOf="@+id/TextView04"
+		  android:layout_toLeftOf="@+id/derEvaluate"/>
+<TextView android:text="" 
+		  android:id="@+id/evaluateText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+		  android:layout_below="@+id/xText"/>
+</RelativeLayout>
+</ScrollView>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/RelativeLayout03">
+<com.andymcsherry.library.KeyboardView
+    android:id="@+id/derivativeKey"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
+</RelativeLayout>

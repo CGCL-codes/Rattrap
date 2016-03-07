@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:id="@+id/addLayout">
+<ScrollView android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+		    android:id="@+id/derivativeScroll"
+  android:layout_above="@+id/RelativeLayout03"
+  android:layout_alignParentTop="true">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView android:text="@string/deriveF" 
+		  android:id="@+id/TextView01" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+    	  android:layout_marginTop="8sp"/>
+<EditText android:text="x" 
+		  android:id="@+id/fVarText" 
+		  android:layout_width="80sp" 
+		  android:layout_height="wrap_content"
+		  android:layout_toRightOf="@+id/TextView01"/>
+<TextView android:text=")=" 
+		  android:id="@+id/TextView11" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+    	  android:layout_toRightOf="@id/fVarText"
+    	  android:layout_marginTop="8sp"/>
+<EditText android:text="" 
+		  android:id="@+id/functionText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/fVarText"/>
+<Button   android:text="@string/insertFun" 
+		  android:id="@+id/addButton" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/functionText"/>
+<TextView android:text="@string/withRespect" 
+		  android:id="@+id/TextView02" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+		  android:layout_below="@+id/addButton"
+    	  android:layout_marginTop="7sp"/>
+<EditText android:text="x" android:id="@+id/varText" 
+		  android:layout_width="50sp" 
+		  android:layout_height="wrap_content"
+		  android:layout_toRightOf="@+id/TextView02"
+		  android:layout_below="@+id/addButton"/>
+<RadioGroup
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:id="@+id/radioGroup"
+      android:layout_below="@+id/varText">
+      <RadioButton android:id="@+id/radio1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/first" 
+		  android:textSize="20sp"
+    	  />
+      <RadioButton android:id="@+id/radio2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/second" 
+		  android:textSize="20sp"
+    	  />
+      <RadioButton android:id="@+id/radio3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/third" 
+		  android:textSize="20sp"
+    	  />
+      <RadioButton android:id="@+id/radio4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/fourth" 
+		  android:textSize="20sp"
+    	  />
+    </RadioGroup>
+<Button   android:text="@string/derive" 
+		  android:id="@+id/calculate" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/radioGroup"/>
+<TextView android:text="@string/derivative:" 
+		  android:id="@+id/TextView03" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+		  android:layout_below="@+id/calculate"/>
+<TextView android:text="" 
+		  android:textSize="20sp" 
+		  android:id="@+id/derText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/TextView03"/>
+<Button   android:text="@string/addGraph" 
+		  android:id="@+id/addGraph" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/derText"/>
+<TextView android:text="@string/evaluateAt" 
+		  android:id="@+id/TextView04" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    	  
+		  android:layout_below="@+id/addGraph"/>
+<EditText android:text="0" 
+		  android:id="@+id/xText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/TextView04"/>
+<Button   android:text="@string/evaluate" 
+		  android:id="@+id/derEvaluate" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/xText"/>
+<TextView android:text="" 
+		  android:id="@+id/evaluateText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+		  android:layout_below="@+id/derEvaluate"/>
+
+
+
+</RelativeLayout>
+</ScrollView>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/RelativeLayout03">
+<com.andymcsherry.library.KeyboardView
+    android:id="@+id/derivativeKey"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
+</RelativeLayout>

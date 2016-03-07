@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="@dimen/key_height"
+    >
+
+    <Row>
+        <Key android:codes="-13" android:keyLabel="csc"  android:keyWidth="13%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-14" android:keyLabel="sec" android:keyWidth="13%p"/>
+        <Key android:codes="-15" android:keyLabel="cot" android:keyWidth="13%p"/>
+        <Key android:codes="-16" android:keyLabel="arcsin" android:keyWidth="20%p"/>
+        <Key android:codes="-17" android:keyLabel="arccos" android:keyWidth="20%p"/>
+        <Key android:codes="-18" android:keyLabel="arctan" android:keyWidth="21%p"/>
+    </Row>
+    
+    <Row>
+        <Key android:codes="-25" android:keyLabel="sinh"  android:keyWidth="13%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-26" android:keyLabel="cosh" android:keyWidth="13%p" />
+        <Key android:codes="-27" android:keyLabel="tanh" android:keyWidth="13%p" />
+        <Key android:codes="-19" android:keyLabel="arccsc" android:keyWidth="20%p"/>
+        <Key android:codes="-20" android:keyLabel="arcsec" android:keyWidth="20%p"/>
+        <Key android:codes="-21" android:keyLabel="arccott" android:keyWidth="21%p"/>
+    </Row>
+    
+    <Row>
+        <Key android:codes="-28" android:keyLabel="csch" android:keyWidth="13%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-29" android:keyLabel="sech" android:keyWidth="13%p"  />
+        <Key android:codes="-30" android:keyLabel="coth" android:keyWidth="13%p" />
+        <Key android:codes="-31" android:keyLabel="arcsinh" android:keyWidth="20%p"/>
+        <Key android:codes="-32" android:keyLabel="arccosh" android:keyWidth="20%p"/>
+        <Key android:codes="-33" android:keyLabel="arctanh" android:keyWidth="21%p"/>
+        
+    </Row>
+    
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-3" android:keyIcon="@drawable/sym_keyboard_done" 
+                android:keyWidth="20%p" android:keyEdgeFlags="left" />
+        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="15%p" />
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" android:keyWidth="35%p" 
+                android:isRepeatable="true"/>
+        <Key android:keyLabel="alt" android:codes="-1"
+                android:keyWidth="15%p" android:isModifier="true"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
+                android:keyWidth="15%p" android:keyEdgeFlags="right"
+                android:isRepeatable="true"/>
+    </Row>
+</Keyboard>

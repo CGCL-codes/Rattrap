@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+<RelativeLayout 
+			  android:id="@+id/LinearLayout02" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"
+			  android:layout_alignParentBottom="true">
+<com.andymcsherry.library.KeyboardView
+			  android:id="@+id/tangentKey" 
+			  android:layout_width="fill_parent" 
+			  android:layout_height="wrap_content"/>
+</RelativeLayout>
+
+<ScrollView android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"
+	android:layout_alignParentTop="true"
+	android:layout_above="@+id/LinearLayout02">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<TextView android:text="@string/findTangent" 
+		  android:id="@+id/TextView01" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:textSize="20sp"
+    />
+<EditText android:text="" 
+		  android:id="@+id/tangentFun" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/TextView01"/>
+<Button   android:text="@string/insertFun" 
+		  android:id="@+id/addButton" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/tangentFun"/>
+<TextView android:text="@string/whereVar" 
+		  android:id="@+id/TextView02" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/addButton"
+		  android:textSize="20sp"
+    />
+<RelativeLayout 
+		  android:id="@+id/LinearLayout03" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/TextView02">
+<EditText android:text="x" android:id="@+id/varText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_alignParentLeft="true"/>
+<TextView android:text="=" 
+		  android:id="@+id/TextView08" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_toRightOf="@+id/varText"
+		  android:textSize="35sp"
+    />
+<EditText android:text="0" android:id="@+id/xText" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_toRightOf="@+id/TextView08"/>
+</RelativeLayout>
+<Button   android:text="@string/generate" 
+		  android:id="@+id/tanGenerate" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/LinearLayout03"/>
+<TextView android:text="@string/tangentline" 
+		  android:id="@+id/TextView03" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/tanGenerate"
+		  android:textSize="20sp"
+    />
+<TextView android:text="" 
+		  android:id="@+id/tanText" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/TextView03"
+		  android:textSize="20sp"/>
+<TextView android:text="@string/evaluateAt" 
+		  android:id="@+id/TextView04" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/tanText"
+		  android:textSize="18sp"/>
+<EditText android:text="0" 
+		  android:id="@+id/evalIn" 
+		  android:layout_width="fill_parent" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/TextView04"/>
+<Button   android:text="@string/evaluate" 
+		  android:id="@+id/tanEvaluate" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/evalIn"/>
+<TextView android:text="" 
+		  android:id="@+id/evalOut" 
+		  android:layout_width="wrap_content" 
+		  android:layout_height="wrap_content"
+		  android:layout_below="@+id/tanEvaluate"
+		  android:textSize="20sp"/>
+
+
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>

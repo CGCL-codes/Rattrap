@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <TextView
+        android:id="@+id/optionsTitle"
+        android:text="@string/options"
+        android:textSize="18sp"
+        
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/hapticCheck"
+        android:text="@string/hapticFeedback"
+        android:layout_below="@+id/optionsTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/launcherIcons"
+        android:text="@string/launcherIcons"
+        android:textSize="16sp"
+        
+        android:layout_below="@id/hapticCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/graphCheck"
+        android:text="@string/graph"
+        android:layout_below="@+id/launcherIcons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/calculatorCheck"
+        android:text="@string/calculator"
+        android:layout_below="@+id/graphCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/derivativeCheck"
+        android:text="@string/derivative"
+        android:layout_below="@+id/calculatorCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/integralCheck"
+        android:text="@string/integration"
+        android:layout_below="@+id/derivativeCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:id="@+id/formulaCheck"
+        android:text="@string/formulatables"
+        android:layout_below="@+id/integralCheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    
+        
+</RelativeLayout>
