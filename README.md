@@ -2,7 +2,7 @@
 
 The container-based cloud platform for mobile code offloading. *Rattrap* provides mobile code runtime environments throuph *Cloud Android Container*.
 
-![](http://7xlcoc.com1.z0.glb.clouddn.com/rattrap_framework_v3.png)
+![](http://7xlcoc.com1.z0.glb.clouddn.com/rattrap_framework.png)
 
 We introduce two basic concepts here to help understand *Rattrap*.
 ## Mobile code offloading
