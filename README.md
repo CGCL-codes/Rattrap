@@ -28,6 +28,7 @@ Framework consists of the code offloading frameworks and our 6 workloads which h
 
 #How to cite#
 
-*Rattrap* is built for comparison with current cloud platform based on VM.  If you are using it for your research, please do not forget to cite. Thanks! 
+*Rattrap* is built for comparison with current cloud platform based on VM.  If you are using it for your research, please do not forget to cite. （Song Wu, Chao Niu, Jia Rao, Hai Jin and Xiaohai Dai, “Container-Based Cloud Platform for Mobile Computation Offloading”, in Proceedings of IPDPS’17）
 
-The detail about our paper is coming soon...
+Thanks! 
+
