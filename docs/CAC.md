@@ -42,13 +42,13 @@ $ repo sync
 
 ####  2.2 Patch source code
 
-After downloading the source code, apply the [rattrap.patch](https://github.com/SongWuCloud/Rattrap/blob/master/Runtime/rattrap.patch).
+After downloading the source code, apply the [rattrap.patch](https://github.com/CGCL-codes/Rattrap/blob/master/Runtime/rattrap.patch).
 
 ```
 patch -p1 < rattrap.patch
 ```
 
-We also provide a [tool](https://github.com/SongWuCloud/Rattrap/blob/master/tools/patch-split.sh) for you, that may help you split the patch file created by `repo diff` command. 
+We also provide a [tool](https://github.com//Rattrap/blob/master/tools/patch-split.sh) for you, that may help you split the patch file created by `repo diff` command. 
 
 
 
@@ -83,7 +83,7 @@ apt-get install build-essential \
 
 
 
-We also provide a [dockerfile](https://github.com/SongWuCloud/Rattrap/blob/master/Runtime/Dockerfile) for 32 bit Android-x86 Kernel build environment. Before compiling kernel, copy the [.config](https://github.com/SongWuCloud/Rattrap/blob/master/Runtime/.config) file into the  `$KITKAT-x86/kernel/arch/x86/configs` folder and rename it (suppose the name of your configure file is my_config), and then build it with following commands.
+We also provide a [dockerfile](https://github.com/CGCL-codes/Rattrap/blob/master/Runtime/Dockerfile) for 32 bit Android-x86 Kernel build environment. Before compiling kernel, copy the [.config](https://github.com/CGCL-codes/Rattrap/blob/master/Runtime/.config) file into the  `$KITKAT-x86/kernel/arch/x86/configs` folder and rename it (suppose the name of your configure file is my_config), and then build it with following commands.
 
 ```
 . build/envsetup.sh
@@ -155,7 +155,7 @@ lxc.tty = 4
 
 After building android-x86, you can find a folder named `root` in `$OUT/target/product/x86` directory.  Copy the `$OUT/target/product/x86/system` to `$OUT/target/product/x86/root/`, then enter `root` directory and copy all files to `/var/lib/lxc/android/rootfs` directory.
 
-We also provide an example of android container root filesystem. The [newlxc.py](https://github.com/SongWuCloud/Rattrap/blob/master/Runtime/newlxc.py) script and [rootfs.tar.gz](https://github.com/SongWuCloud/Rattrap/blob/master/Runtime/rootfs.tar.gz) together create individual Cloud Android Container.
+We also provide an example of android container root filesystem. The [newlxc.py](https://github.com/CGCL-codes/Rattrap/blob/master/Runtime/newlxc.py) script and [rootfs.tar.gz](https://github.com/CGCL-codes/Rattrap/blob/master/Runtime/rootfs.tar.gz) together create individual Cloud Android Container.
 
 The following command creates a simple Cloud Android Container named 'test'.
 
@@ -177,12 +177,12 @@ We construct the file system according to initrd.img before starting a Cloud And
 
 We provide an offloading framework and six benchmark workloads. The workloads are as follows, and details can be found in our paper.
 
-- [AntiVirus](https://github.com/SongWuCloud/Rattrap/blob/master/Framework/AntiVirus/AndroidManifest.xml)
-- [CalculusTools](https://github.com/SongWuCloud/Rattrap/blob/master/Framework/CalculusTools/AndroidManifest.xml)
-- [CuckooChessAPK](https://github.com/SongWuCloud/Rattrap/blob/master/Framework/CuckooChessAPK/AndroidManifest.xml)
-- [FaceDetect](https://github.com/SongWuCloud/Rattrap/blob/master/Framework/FaceDetect/AndroidManifest.xml)
-- [Linpack](https://github.com/SongWuCloud/Rattrap/blob/master/Framework/Linpack/AndroidManifest.xml)
-- [OCR](https://github.com/SongWuCloud/Rattrap/blob/master/Framework/OCR/AndroidManifest.xml)
+- [AntiVirus](https://github.com/CGCL-codes/Rattrap/blob/master/Framework/AntiVirus/AndroidManifest.xml)
+- [CalculusTools](https://github.com/CGCL-codes/Rattrap/blob/master/Framework/CalculusTools/AndroidManifest.xml)
+- [CuckooChessAPK](https://github.com/CGCL-codes/Rattrap/blob/master/Framework/CuckooChessAPK/AndroidManifest.xml)
+- [FaceDetect](https://github.com/CGCL-codes/Rattrap/blob/master/Framework/FaceDetect/AndroidManifest.xml)
+- [Linpack](https://github.com/CGCL-codes/Rattrap/blob/master/Framework/Linpack/AndroidManifest.xml)
+- [OCR](https://github.com/CGCL-codes/Rattrap/blob/master/Framework/OCR/AndroidManifest.xml)
 
 **DirectoryService** is actually the dispatcher in our rattrap. To run it, you need to export the project as a runnable jar (suppose the name of jar is DirService.jar) and run
 
@@ -190,7 +190,7 @@ We provide an offloading framework and six benchmark workloads. The workloads ar
 $ java -jar DirServic.jar
 ```
 
-You need a MySQL DB to maintain the states of Cloud Android Containers by import the [sql file](https://github.com/SongWuCloud/Rattrap/blob/master/Framework/androidlxc.sql) we provide.
+You need a MySQL DB to maintain the states of Cloud Android Containers by import the [sql file](https://github.com/CGCL-codes/Rattrap/blob/master/Framework/androidlxc.sql) we provide.
 
 **LxcOff-Library** is the offloading library acuqired when you want to modify your application to adopt Rattrap. The implementation details can be found in the workload source code.
 
