@@ -23,5 +23,6 @@ We provide a detailed description of the [document](https://github.com/CGCL-code
 
 *Rattrap* is built for comparison with current cloud platform based on VM.  If you are using it for your research, please do not forget to cite. [（Song Wu, Chao Niu, Jia Rao, Hai Jin and Xiaohai Dai, “Container-Based Cloud Platform for Mobile Computation Offloading”, in Proceedings of IPDPS’17）](http://grid.hust.edu.cn/wusong/file/ipdps17.pdf)
 
-Thanks! 
+# 4. Licensing 
+*Rattrap* is licensed under the Apache License, Version 2.0. See LICENSE for the full license text.
 
