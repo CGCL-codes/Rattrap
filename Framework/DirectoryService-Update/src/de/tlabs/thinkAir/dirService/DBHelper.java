@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class DBHelper {
-	public static final String url = "jdbc:mysql://202.114.6.53:3306/androidlxc";
+	public static final String url = "jdbc:mysql://" + DirectoryService.ipAddress + ":3306/androidlxc";
 	public static final String name = "com.mysql.jdbc.Driver";
 	public static final String user = "root";
 	public static final String password = "lxc5967903";
@@ -21,7 +21,7 @@ public class DBHelper {
 	public DBHelper() {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			this.conn = DriverManager.getConnection("jdbc:mysql://202.114.6.53:3306/androidlxc", "root", "lxc5967903");
+			this.conn = DriverManager.getConnection("jdbc:mysql://" + DirectoryService.ipAddress + ":3306/androidlxc", "root", "lxc5967903");
 			System.out.println("Database connected");
 			this.dbstate = this.conn.createStatement();
 		} catch (Exception var2) {

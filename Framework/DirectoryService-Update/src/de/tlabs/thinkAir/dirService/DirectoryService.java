@@ -20,11 +20,17 @@ public class DirectoryService implements Runnable {
 	public static ArrayList<Clone> vbClones;
 	public static ArrayList<Clone> amazonClones;
 	private static Configuration config;
+	public static String ipAddress = "";
 
 	public DirectoryService() {
 	}
 
 	public static void main(String[] args) {
+		if (args.length != 0) {
+			System.out.println("Usage: java -jar dirService.jar ipAddress");
+			System.exit(-1);
+		}
+		ipAddress = args[0];
 		(new Thread(new DirectoryService())).start();
 	}
 
