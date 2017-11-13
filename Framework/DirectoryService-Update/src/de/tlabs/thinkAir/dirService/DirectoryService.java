@@ -26,7 +26,7 @@ public class DirectoryService implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		if (args.length != 0) {
+		if (args.length != 1) {
 			System.out.println("Usage: java -jar dirService.jar ipAddress");
 			System.exit(-1);
 		}
